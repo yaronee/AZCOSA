@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Préférences Alimentaires</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <header class="bg-gradient-to-b from-indigo-100/20">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">AZCOSA</span>
+        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+      </a>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="home.html" class="text-sm/6 font-semibold text-gray-900">Accueil</a>
+        <a href="Preferences.html" class="text-sm/6 font-semibold text-gray-900">Preferences</a>
+        <a href="Menus.html" class="text-sm/6 font-semibold text-gray-900">Menus</a>
+        <a href="Contact.html" class="text-sm/6 font-semibold text-gray-900">Contact</a>
+   
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">AZCOSA</span>
+            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Accueil</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Preferences</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Menus</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<div class="min-h-screen flex items-center justify-center px-6 py-12">
+  <div class="grid lg:grid-cols-2 gap-8 items-center w-full max-w-7xl bg-white rounded-lg shadow-md">
+    <!-- Section Image -->
+    <div class="relative">
+      <img src="https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/elle-a-table/fiches-cuisine/tous-les-themes/recettes-plats-rapides/88699481-12-fre-FR/Recettes-de-plats-rapides.jpg" 
+           alt="Repas rapide" 
+           class="w-full h-full object-cover rounded-l-lg lg:rounded-l-lg">
+    </div>
+    
+    <!-- Formulaire -->
+    <div class="p-8">
+      <h1 class="text-3xl font-semibold text-indigo-600">Configurer vos préférences alimentaires</h1>
+      <p class="mt-4 text-gray-600">Indiquez vos préférences pour des repas parfaitement adaptés à vos besoins.</p>
+
+      <form class="mt-8 space-y-6">
+        <!-- Nombre de repas -->
+        <div>
+          <label for="meals" class="block text-gray-700 font-medium">Nombre de repas par jour</label>
+          <input type="number" id="meals" name="meals" min="1" max="5" 
+                 class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+                 placeholder="Ex : 1">
+        </div>
+
+        <!-- Nombre de personnes -->
+        <div>
+          <label for="people" class="block text-gray-700 font-medium">Nombre de personnes</label>
+          <input type="number" id="people" name="people" min="1" 
+                 class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+                 placeholder="Ex : 2">
+        </div>
+
+        <!-- Allergies -->
+        <div>
+          <label class="block text-gray-700 font-medium">Allergies ou intolérances</label>
+          <div class="mt-2 space-y-2">
+            <label class="flex items-center">
+              <input type="checkbox" name="allergies" value="gluten" class="form-checkbox text-indigo-600">
+              <span class="ml-2">Gluten</span>
+            </label>
+            <label class="flex items-center">
+              <input type="checkbox" name="allergies" value="lactose" class="form-checkbox text-indigo-600">
+              <span class="ml-2">Lactose</span>
+            </label>
+            <label class="flex items-center">
+              <input type="checkbox" name="allergies" value="arachides" class="form-checkbox text-indigo-600">
+              <span class="ml-2">Arachides</span>
+            </label>
+            <label class="flex items-center">
+              <input type="checkbox" name="allergies" value="fruits-de-mer" class="form-checkbox text-indigo-600">
+              <span class="ml-2">Fruits de mer</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Type de régime -->
+        <div>
+          <label for="diet" class="block text-gray-700 font-medium">Type de régime</label>
+          <select id="diet" name="diet" 
+                  class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+            <option value="" disabled selected>Choisissez un régime</option>
+            <option value="equilibre">Équilibré</option>
+            <option value="vegetarien">Végétarien</option>
+            <option value="vegetalien">Végétalien</option>
+          </select>
+        </div>
+
+        <!-- Équilibre nutritionnel -->
+        <div>
+          <label class="block text-gray-700 font-medium">Objectifs nutritionnels</label>
+          <div class="mt-2 space-y-2">
+            <label class="flex items-center">
+              <input type="checkbox" name="nutrition" value="faible-calories" class="form-checkbox text-indigo-600">
+              <span class="ml-2">Faible en calories</span>
+            </label>
+            <label class="flex items-center">
+              <input type="checkbox" name="nutrition" value="riche-proteines" class="form-checkbox text-indigo-600">
+              <span class="ml-2">Riche en protéines</span>
+            </label>
+            <label class="flex items-center">
+              <input type="checkbox" name="nutrition" value="faible-glucides" class="form-checkbox text-indigo-600">
+              <span class="ml-2">Faible en glucides</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Bouton de soumission -->
+        <button type="submit" 
+                class="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+          Enregistrer les préférences
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
