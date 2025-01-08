@@ -1,0 +1,41 @@
+
+Étapes simples pour importer le projet GitHub dans VS Code :
+
+1. Télécharger Git et VS Code
+	1.	Git : Téléchargez et installez depuis https://git-scm.com/.
+	2.	VS Code : Téléchargez et installez depuis https://code.visualstudio.com/.
+
+2. Récupérer le lien du projet GitHub
+	1.	Sur GitHub, ouvrez la page du projet.
+	2.	Cliquez sur le bouton vert “Code”.
+	3.	Copiez le lien affiché (exemple : https://github.com/mon-projet.git).
+
+3. Ouvrir VS Code
+	1.	Ouvrez VS Code sur votre ordinateur.
+	2.	Dans le menu, cliquez sur “Fichier” > “Ouvrir un dossier” pour choisir un emplacement où enregistrer le projet.
+
+4. Cloner le projet (récupérer les fichiers)
+	1.	Ouvrez le terminal intégré dans VS Code :
+	•	Cliquez sur “Terminal” > “Nouveau terminal” dans le menu.
+	2.	Tapez la commande suivante (remplacez lien-du-projet par le lien copié à l’étape 2) :
+
+git clone lien-du-projet
+
+
+	3.	Une fois le téléchargement terminé, tapez :
+
+cd nom-du-dossier
+code .
+
+Cela ouvrira le projet dans VS Code.
+
+5. Ouvrir et modifier les fichiers
+	•	Une fois le projet chargé, vos amis pourront modifier les fichiers directement dans VS Code.
+
+6. Alternative (si Git n’est pas installé)
+
+S’ils n’ont pas envie de télécharger Git :
+	1.	Sur la page GitHub du projet, cliquez sur “Code” > “Download ZIP”.
+	2.	Extrayez l’archive ZIP sur l’ordinateur.
+	3.	Ouvrez le dossier extrait dans VS Code.
+

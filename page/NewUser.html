@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Azcosa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<header class="bg-gradient-to-b from-indigo-100/20">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">AZCOSA</span>
+        <img class="h-8 w-auto" src="https://media.istockphoto.com/id/1223597340/es/vector/dise%C3%B1o-de-ilustraci%C3%B3n-de-la-plantilla-de-logotipo-de-logotipo-de-restaurante-hogar-o-casa.jpg?s=612x612&w=0&k=20&c=VhbZklQiNl6mbJUgq-8klkqnTYvQ4xibTABBDazYwwo=" alt="">
+      </a>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="home.html" class="text-sm/6 font-semibold text-gray-900">Accueil</a>
+        <a href="Preferences.html" class="text-sm/6 font-semibold text-gray-900">Preferences</a>
+        <a href="Menus.html" class="text-sm/6 font-semibold text-gray-900">Menus</a>
+        <a href="Contact.html" class="text-sm/6 font-semibold text-gray-900">Contact</a>
+        <a href="Login.html" class="text-sm/6 font-semibold text-indigo-600">Connexion</a>
+      </div>
+    </nav>
+  </header>
+<!-- Conteneur principal -->
+<div class="flex min-h-screen items-center justify-center">
+  <div class="flex flex-col w-full max-w-4xl rounded-lg shadow-lg overflow-hidden bg-white md:flex-row">
+    
+     <!-- Section image -->
+     <div class="hidden w-1/2 bg-cover md:block">
+      <img src="https://florette.fr/wp-content/uploads/2024/08/Salade-cesar-Florette.jpg" 
+           alt="Salade César" 
+           class="object-cover h-full w-full">
+    </div>
+
+    <!-- Section formulaire -->
+    <div class="w-full p-8 md:w-1/2">
+      <h2 class="text-3xl font-extrabold text-center text-gray-800">Créer un Compte</h2>
+      <p class="mt-2 text-center text-gray-500">Rejoignez-nous et découvrez des repas adaptés à vos envies... et vos blagues culinaires !</p>
+
+      <form class="mt-6 space-y-6">
+        <!-- Champ Nom -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Nom complet</label>
+          <input type="text" id="name" name="name" required 
+            class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            placeholder="Jean Dupont">
+        </div>
+
+        <!-- Champ E-mail -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Adresse e-mail</label>
+          <input type="email" id="email" name="email" required 
+            class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            placeholder="exemple@azcosa.com">
+        </div>
+
+        <!-- Champ Mot de passe -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+          <input type="password" id="password" name="password" required 
+            class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            placeholder="••••••••">
+        </div>
+
+        
+
+        <!-- Bouton de création -->
+        <button type="submit"
+          class="w-full bg-gray-800 text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+          🥗 Créer un compte
+        </button>
+      </form>
+
+      <!-- Lien vers la page de connexion -->
+      <div class="mt-4 text-center text-sm text-gray-600">
+        <p>Déjà membre ? <a href="login.html" class="text-indigo-600 hover:underline">Connectez-vous ici </a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<footer class="bg-white text-black py-8">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Colonne 1 : Logo et Description -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">AZCOSA</h3>
+        <p class="text-black">Générez facilement des menus personnalisés et simplifiez vos courses en ligne.</p>
+      </div>
+
+      <!-- Colonne 2 : Liens Utiles -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+        <ul class="space-y-2">
+          <li><a href="home.html" class="text-black hover:text-black">Accueil</a></li>
+          <li><a href="Preferences.html" class="text-black hover:text-black">Préferences</a></li>
+          <li><a href="Menus.html" class="text-black hover:text-black">Menus</a></li>
+          <li><a href="Contact.html" class="text-black hover:text-black">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 : Contact et Réseaux Sociaux -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+        <p class="text-black">support@azcosa.com</p>
+        <p class="text-black">(123) 456-7890</p>
+
+        
+      </div>
+    </div>
+
+    <div class="mt-8 text-center text-gray-400">
+      <p>© 2024 AZCOSA. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+</html>

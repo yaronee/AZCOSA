@@ -11,7 +11,7 @@
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">AZCOSA</span>
-        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+        <img class="h-8 w-auto" src="https://media.istockphoto.com/id/1223597340/es/vector/dise%C3%B1o-de-ilustraci%C3%B3n-de-la-plantilla-de-logotipo-de-logotipo-de-restaurante-hogar-o-casa.jpg?s=612x612&w=0&k=20&c=VhbZklQiNl6mbJUgq-8klkqnTYvQ4xibTABBDazYwwo=" alt="">
       </a>
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -26,40 +26,9 @@
         <a href="Preferences.html" class="text-sm/6 font-semibold text-gray-900">Preferences</a>
         <a href="Menus.html" class="text-sm/6 font-semibold text-gray-900">Menus</a>
         <a href="Contact.html" class="text-sm/6 font-semibold text-gray-900">Contact</a>
-   
+        <a href="Login.html" class="text-sm/6 font-semibold text-indigo-600">Connexion</a>
       </div>
     </nav>
-    <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-10"></div>
-      <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">AZCOSA</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
-          </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Close menu</span>
-            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Accueil</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Preferences</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Menus</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
-
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
 <div class="min-h-screen flex items-center justify-center px-6 py-12">
   <div class="grid lg:grid-cols-2 gap-8 items-center w-full max-w-7xl bg-white rounded-lg shadow-md">
@@ -72,7 +41,7 @@
     
     <!-- Formulaire -->
     <div class="p-8">
-      <h1 class="text-3xl font-semibold text-indigo-600">Configurer vos préférences alimentaires</h1>
+      <h1 class="text-3xl font-semibold text-black">Configurer vos préférences alimentaires</h1>
       <p class="mt-4 text-gray-600">Indiquez vos préférences pour des repas parfaitement adaptés à vos besoins.</p>
 
       <form class="mt-8 space-y-6">
@@ -86,7 +55,7 @@
 
         <!-- Nombre de personnes -->
         <div>
-          <label for="people" class="block text-gray-700 font-medium">Nombre de personnes</label>
+          <label for="people" class="block text-black font-medium">Nombre de personnes</label>
           <input type="number" id="people" name="people" min="1" 
                  class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400" 
                  placeholder="Ex : 2">
@@ -94,7 +63,7 @@
 
         <!-- Allergies -->
         <div>
-          <label class="block text-gray-700 font-medium">Allergies ou intolérances</label>
+          <label class="block text-black font-medium">Allergies ou intolérances</label>
           <div class="mt-2 space-y-2">
             <label class="flex items-center">
               <input type="checkbox" name="allergies" value="gluten" class="form-checkbox text-indigo-600">
@@ -117,9 +86,9 @@
 
         <!-- Type de régime -->
         <div>
-          <label for="diet" class="block text-gray-700 font-medium">Type de régime</label>
+          <label for="diet" class="block text-black font-medium">Type de régime</label>
           <select id="diet" name="diet" 
-                  class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                  class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black">
             <option value="" disabled selected>Choisissez un régime</option>
             <option value="equilibre">Équilibré</option>
             <option value="vegetarien">Végétarien</option>
@@ -129,7 +98,7 @@
 
         <!-- Équilibre nutritionnel -->
         <div>
-          <label class="block text-gray-700 font-medium">Objectifs nutritionnels</label>
+          <label class="block text-black font-medium">Objectifs nutritionnels</label>
           <div class="mt-2 space-y-2">
             <label class="flex items-center">
               <input type="checkbox" name="nutrition" value="faible-calories" class="form-checkbox text-indigo-600">
@@ -148,7 +117,7 @@
 
         <!-- Bouton de soumission -->
         <button type="submit" 
-                class="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                class="w-full bg-black text-white px-4 py-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400">
           Enregistrer les préférences
         </button>
       </form>
@@ -157,4 +126,39 @@
 </div>
 
 </body>
+<footer class="bg-white text-black py-8">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Colonne 1 : Logo et Description -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">AZCOSA</h3>
+        <p class="text-black">Générez facilement des menus personnalisés et simplifiez vos courses en ligne.</p>
+      </div>
+
+      <!-- Colonne 2 : Liens Utiles -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+        <ul class="space-y-2">
+          <li><a href="home.html" class="text-black hover:text-black">Accueil</a></li>
+          <li><a href="Preferences.html" class="text-black hover:text-black">Préferences</a></li>
+          <li><a href="Menus.html" class="text-black hover:text-black">Menus</a></li>
+          <li><a href="Contact.html" class="text-black hover:text-black">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 : Contact et Réseaux Sociaux -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+        <p class="text-black">support@azcosa.com</p>
+        <p class="text-black">(123) 456-7890</p>
+
+        
+      </div>
+    </div>
+
+    <div class="mt-8 text-center text-gray-400">
+      <p>© 2024 AZCOSA. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
 </html>

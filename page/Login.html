@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contactez-nous</title>
+  <title>Connexion - Azcosa</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <header class="bg-gradient-to-b from-indigo-100/20">
@@ -29,54 +29,51 @@
       </div>
     </nav>
   </header>
-<body class="bg-white text-gray-100">
+<body class="bg-gray-100">
 
-<div class="min-h-screen flex items-center justify-center px-6 py-12">
-  <div class="w-full max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden lg:flex">
-    <!-- Image Section -->
-    <div class="hidden lg:block lg:w-1/2 bg-cover" 
-         style="background-image: url('https://us.123rf.com/450wm/lightfieldstudios/lightfieldstudios1811/lightfieldstudios181137419/112318877-bel-homme-souriant-en-tablier-faisant-cuire-des-aliments-%C3%A0-la-cuisine.jpg?ver=6');">
-    </div>
-    
-    <!-- Form Section -->
-    <div class="w-full p-8 lg:w-1/2">
-        <h2 class="text-3xl font-bold text-center text-black">Nous Contacter</h2>
-              <p class="mt-4 text-center text-black">Une question ou un besoin ?</p>
+  <!-- Conteneur principal -->
+  <div class="flex min-h-screen items-center justify-center bg-gray-50 py-12 px-6 lg:px-8">
+    <div class="flex w-full max-w-4xl overflow-hidden bg-white rounded-lg shadow-lg">
+      
+      <!-- Section image -->
+      <div class="hidden w-1/2 bg-cover md:block" style="background-image: url('https://www.galbani.fr/wp-content/uploads/2020/03/AdobeStock_228571639-2-800x600.jpeg')">
+      </div>
 
-      <form action="https://formspree.io/f/azcosa@gmail.com" method="POST" class="mt-8 space-y-6">
-        <!-- Nom -->
-        <div>
-          <label for="name" class="block text-black font-medium">Nom</label>
-          <input type="text" id="name" name="name" 
-                 class="mt-2 w-full px-4 py-2 text-black border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" 
-                 placeholder="Martin" required>
+      <!-- Section formulaire -->
+      <div class="w-full p-8 md:w-1/2">
+        <h2 class="text-3xl font-bold text-center text-gray-700">Bienvenue chez Azcosa</h2>
+        <p class="mt-2 text-sm text-center text-gray-500">Veuillez vous connecter à votre compte</p>
+
+        <form class="mt-6 space-y-4">
+          <!-- Champ e-mail -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Adresse e-mail</label>
+            <input type="email" id="email" name="email" required 
+              class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-gray-400 focus:outline-none">
+          </div>
+
+          <!-- Champ mot de passe -->
+          <div>
+            <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+            <input type="password" id="password" name="password" required 
+              class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-gray-400 focus:outline-none">
+          </div>
+
+          <!-- Bouton connexion -->
+          <button type="submit"
+            class="w-full px-4 py-2 text-white bg-gray-800 rounded-md hover:bg-indigo-500 focus:ring-2 focus:ring-gray-600">
+            Connexion
+          </button>
+        </form>
+
+        <!-- Options supplémentaires -->
+        <div class="mt-4 flex justify-between text-sm text-gray-500">
+          <a href="ForgotPassword.html" class="hover:underline">Mot de passe oublié ?</a>
+          <a href="NewUser.html" class="hover:underline">Créer un compte</a>
         </div>
-
-        <!-- Email -->
-        <div>
-          <label for="email" class="block text-black font-medium">Adresse e-mail</label>
-          <input type="email" id="email" name="email" 
-                 class="mt-2 w-full px-4 py-2 text-black border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" 
-                 placeholder="Alexandra@gmail.com" required>
-        </div>
-
-        <!-- Message -->
-        <div>
-          <label for="message" class="block text-black font-medium">Message</label>
-          <textarea id="message" name="message" rows="4" 
-                    class="mt-2 w-full px-4 py-2 text-black border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" 
-                    placeholder="Votre message ici..." required></textarea>
-        </div>
-
-        <!-- Bouton de soumission -->
-        <button type="submit" 
-                class="w-full bg-black text-white px-4 py-2 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500">
-          Envoyer le message
-        </button>
-      </form>
+      </div>
     </div>
   </div>
-</div>
 
 </body>
 <footer class="bg-white text-black py-8">
@@ -102,8 +99,8 @@
         <!-- Colonne 3 : Contact et Réseaux Sociaux -->
         <div>
           <h4 class="text-lg font-semibold mb-4">Contact</h4>
-          <p class="text-black">azcosa@gmail.com</p>
-          <p class="text-black">+33 0645321809</p>
+          <p class="text-black">support@azcosa.com</p>
+          <p class="text-black">(123) 456-7890</p>
   
           
         </div>
